@@ -1,0 +1,57 @@
+<?page id="viewPage" title="ZK Sample View Page" cacheable="false" language="xul/html" zscriptLanguage="Java" contentType="text/html;charset=UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul"
+    xmlns:zk="http://www.zkoss.org/2005/zk">
+ <window id="winView" width="100%">
+    <caption label="CAPITAL CODE"/>
+    <grid>
+     <auxhead>
+         <auxheader label="ZK eXo Platform Portlet Window" colspan="2"/>
+        </auxhead>
+     <columns>
+         <column label="Component Type" width="150px" />
+            <column label="Component"/>
+        </columns>
+        <rows>
+         <row>
+             <label value="Textbox Field" width="150px" />
+                <textbox width="150px" tabindex="1" constraint="no empty" />
+            </row>
+            <row>
+             <label value="Password Field" width="150px" />
+                <textbox type="password" width="150px" tabindex="2" />
+            </row>
+            <row>
+             <label value="Intbox Field" width="150px" />
+                <intbox width="150px"  tabindex="3" />
+            </row>
+            <row>
+             <label value="Decimalbox Field" width="150px" />
+             <decimalbox format="###.##" width="150px"  tabindex="4" />
+            </row>
+            <row>
+             <label value="Datebox Field" width="150px" />
+             <datebox  format="yyyy/MM/dd" width="150px" tabindex="5"/>
+            </row>
+            <row>
+             <label value="Listbox Field" width="150px" />
+             <listbox mold="select" tabindex="6">
+              <listitem label="Default" value="" />
+              <listitem label="CAPITAL CODE Java" value="java" />
+              <listitem label="CAPITAL CODE ZK" value="zk" />
+              <listitem label="CAPITAL CODE eXo Platform" value="eXoPlatform" />
+             </listbox>
+            </row>
+            <row>
+             <label value="Spinner Field" width="150px" />
+          <spinner constraint="no negative,no zero" value="10" tabindex="7" />
+      </row>
+            <row>
+             <cell colspan="2" style="text-align:center">
+             <button mold="os" label="Submit" width="100px" height="30px" />
+             </cell>
+            </row>
+       </rows>
+    </grid>
+    </window>
+</zk>
+
